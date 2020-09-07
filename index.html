@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--Fontawesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+        
+
+        <title>AuraDFWHomes</title>
+    
+    </head>
+
+    <body style="background-color:white;">
+
+        <!--Navbar-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="/logos/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listings.html">Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buyer.html">Buyer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="seller.html">Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-phone-volume phone"></i>+1 817-919-8398</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-envelope email"></i>auradfwhomes@homail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Searchbar-->
+
+        <section class="search-bar" id="listi">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <form>
+                            <div class="p-1 bg-light shadow-sm">
+                                <div class="input-group">
+                                    <input type="search" placeholder="City, County, Neighboor, etc." class="form-control border-0 bg-light">
+                                    <div class="input-group-append">
+                                        <!-- Example single danger button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle smallscreen" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Search Homes
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-house-user mr-2"></i>My Listings</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-house-user mr-2"></i>Buyer</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-house-user mr-2"></i>Seller</a>
+                                            <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-house-user mr-2"></i>Search</a>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-link"><i class="fas fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Carousel-->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/living_room.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/living_room2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/living_room3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!--about me section-->
+
+        <section class="main-section container">
+            <div class="auto-container">
+                <div class="row content">
+                    <div class="col-sm-6">
+                        <h2 class="text-center">Aura Garrido Sabogal</h2>
+                        <h1 class="text-center">Texas DFW Homes</h1>
+                        <br>
+                        <p>With over 20 years of Real Estate experience, Aura brings a highly professional approach to residential real estate which leverages her broad education and deep knowledge in real estate negotiations and financial analysis.</p>
+                        <p>As a full-time and results driven REALTOR®, Aura enjoys achieving her clients real estate goals and objectives. She respects that her clients are entrusting, what is perhaps, their largest financial investment with her. Aura's testimonials from many satisfied clients and customers speak to her ability, character and competency.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="img-wrap d-none d-sm-block">
+                            <img src="img/aura.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--testimonials-->
+
+        <section class="sectionTestimonials">
+            <div class="container">
+                <h2 class="heading">Testimonials</h2>
+                <div class="row">
+                    <div class="col-md-4 col-xm-4 text-center">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img src="/img/background_testimonials.jpg" alt="card background" class="card-img">
+                                <img src="/img/ron.png" alt="profile image" class="profile-img">
+                                <h1>Ron Garrido</h1>
+                                <p>Client, Home Owner</p>
+                                <p class="testimonial">"Aura was a real life saver. I needed to sell and buy a new house in a limited time frame. This was a very anxious process for me. If I didn't have Aura I'm not sure I would have been able to get through it."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xm-4 text-center">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img src="/img/background_testimonials.jpg" alt="card background" class="card-img">
+                                <img src="/img/vern.png" alt="profile image" class="profile-img">
+                                <h1>Vernon Andrews</h1>
+                                <p>Co-Founder at coolglasses.inc</p>
+                                <p class="testimonial">"We started talking to Aura more than six months before we decided to put our house on the market. Aura was never pushy and made some excellent suggestions regarding the staging of our home. The closing went without a hitch and if we had not moved out of state we wouldn’t hesitate to use Aura again for our real estate needs."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xm-4 text-center">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img src="/img/background_testimonials.jpg" alt="card background" class="card-img">
+                                <img src="/img/ingrid.png" alt="profile image" class="profile-img">
+                                <h1>Ingrid Garrido</h1>
+                                <p>Client, Home Owner</p>
+                                <p class="testimonial">"I rarely have the opportunity to give the highest recommendations, but my husband and I have no reservations providing one for Aura Garrido. From the first house we looked at to our closing, Aura was the kindest and most attentive agent we could imagine. She went above and beyond on so many occasions and really made our home purchase about as stress free as possible. It was almost too easy!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Current listings-->
+
+        <section class="bannerSection">
+            <h2 class="heading">New on the market</h2>
+            <div class="container" id="bannerHouses">
+                <div class="row row-content">
+                    <div class="col-md-12 mx-auto">
+                        <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                                <li data-target="#homeCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/house 2.jpg" alt="" />
+                                    <div class="carousel-caption">
+                                        <h3>$1,500,000.00</h3>
+                                        <p class="d-none d-sm-block">5BD, 6BA, 4,250SqFt</p>
+                                        <p class="d-none d-sm-block">1234 Elm Street, Keller, TX 76244</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/house 3.jpg" alt="" />
+                                    <div class="carousel-caption">
+                                        <h3>$2,300,000.00</h3>
+                                        <p class="d-none d-sm-block">5BD, 5BA, 3,980SqFt</p>
+                                        <p class="d-none d-sm-block">4321 Sicamore, Keller, TX 76244</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/house 4.jpg" alt="" />
+                                    <div class="carousel-caption">
+                                        <h3>$1,200,000.00</h3>
+                                        <p class="d-none d-sm-block">4BD, 5BA, 5,300SqFt</p>
+                                        <p class="d-none d-sm-block">789 Rio Grande, El Paso, TX. 73243</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide-to="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="sr-only">next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--forms-->
+
+        <section class="backgroundForms">
+            <div class="container contactForm">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <!--get in touch-->
+                        <form>
+                            <h2>Get in touch</h2>
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-5 col-md-4">
+                                    <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="A. Code" />
+                                </div>
+                                <div class="col-7 col-md-6">
+                                    <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <button type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--mortgage calculator-->
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                            <form>
+                                <h2>Mortgage Calculator</h2>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="priceOfHome" name="priceOfHome" placeholder="Price of Home ($)" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="downPayment" name="downPayment" placeholder="Down Payment (%)" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-5 col-md-4">
+                                        <input type="tel" class="form-control" id="interestRate" name="interestRate" placeholder="Interest Rate (%)" />
+                                    </div>
+                                    <div class="col-7 col-md-6">
+                                        <input type="tel" class="form-control" id="loanTerm" name="loanTerm" placeholder="Loan Term (years)" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-4">
+                                        <button type="submit" class="btn btn-primary">Calculate</button>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-4 col-md-10">
+                                        <input type="email" class="form-control" id="loanPayment" name="loanPayment" placeholder="$" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="/logos/logo.png" id="logoForm">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+                            <h3>Aura Garrido Sabogal</h3>
+                            <p>817-919-8398</p>
+                            <p>email: auradfwhomes@hotmail.com</p>
+                            <img src="/logos/mls.png">
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+                            <h2>Useful links</h2>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="listings.html">Listings</a></li>
+                                <li><a href="buyer.html">Buyer</a></li>
+                                <li><a href="seller.html">Seller</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30">
+                            <h2>follow us</h2>
+                            <a href="https://www.facebook.com/aura.sabogal"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/aurasabogal/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aura-garrido-96278a5b/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+        <!--custom js file-->
+        <script src="js/script.js"></script>
+        <!--Resonsive Css file-->
+        <link href="css/responsive.css" rel="stylesheet">
+
+    </body>
+</html>
